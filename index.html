@@ -1,0 +1,181 @@
+<!DOCTYPE Html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title>Структура страницы</title>
+    <link href="main.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">Shop of second sock 
+                </div>
+                <nav class="nav">
+                    <a class="nav_link" href="">About</a>
+                    <a class="nav_link" href="#service">Services</a>
+                    <a class="nav_link" href="">GPS</a>
+                    <a class="nav_link" href="#catalog">Catalog</a>
+                    <a class="nav_link" href="">Contacts</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+        <div class="intro">
+            <div class="container2">
+            <p>If u lost your second sock</p>
+            <p><span>we help you!</span></p>
+            </div>
+        </div>
+<div class="container3">
+    <div><h1 id="service">Services</h1>
+We offer you different services for help of search your second sock
+    </div>
+    <div class="block1"> 
+          <h2>GPS</h2>
+          <p>Our company offers you new technology in socks search. Its <a href="">gps tracker</a>, device for receiving and transmitting data for satellite monitoring. You fasten gps to your socks and they will never get lost. Trinket is just 5 grams you will not even feel it. GPS tracker is a smart device that works by bluetooth. If you lose your sock you can track its moving on the tracker. The most common signal transmission option is the cellular module. You can check the tracker by your mobile phone.</p>
+    </div>
+    <div class="block2">
+       <h2>New sock</h2>
+       <p>On our web-shop you always can choose a new sock that looks like yours. We have big <a href="#catalog">catalog</a> of different socks of the World. We promise you find there your own second sock. Catalog includes different kinds of colores and materials. We understand how the person feels when he lost his lovely sock. Our teams are professionals and we are ready to help you. 99% of web-shop`s clients recommend our store to friends.</p>
+    </div>
+</div>
+
+<div class="container4">
+    <h1 id="catalog">Catalog</h1>
+    <p>Search for sock in the catalog</p>
+    <p>Please answer the questions. It will be more easy to find what are you looking for</p>
+
+    <form>
+    <laber for="color">What color is your sock?</laber>
+    <input type="text" id="color" name="color" list="colores">
+    <datalist id="colores">
+    <option value="red"></option>
+    <option value="blue"></option>
+    <option value="yellow"></option>
+    <option value="white"></option>
+    <option value="green"></option>
+    </datalist>
+</br>
+    <laber for="material">What material is your sock?</laber>
+    <input type="text" id="material" name="material" list="materials">
+    <datalist id="materials">
+    <option value="cotton"></option>
+    <option value="wool"></option>
+    <option value="viskose"></option>
+    <option value="nylon"></option>
+    <option value="polyamide"></option>
+    </datalist>
+</br>
+<label for="date">When did you see your sock last time?</label>
+<input type="date" id="date" name="date" value="2020-07-01">
+</br>
+Additional information:
+</br>
+<textarea name="comment" id="comment-field" cols="40" rows="5"></textarea>
+</br>
+<input type="checkbox" name="subscribe" id="subscribe-field" checked>
+<label for="subscribe-field">Let us send you notifications</label>
+</br>
+<input type="submit" value="Search">
+</form>
+</div>
+
+
+<div class="container5">
+    <h1>Catalog of socks</h1>
+        <p>Your choice is: <input type="text" value="yellow-cotton">one. Please find your sock from our catalog:</p>
+    <div class="piece">
+        <div>
+        <img src="images/sock1.jpg">
+        </div>
+        <div class="title">Yellow with banana
+        </div>
+        <div class="price">
+        <span>$5.00</span>
+        $3.99
+        </div>
+    </div>
+    <div class="piece">
+        <div class="foto">
+        <img src="images/sock2.jpg">
+        </div>
+        <div class="title">Zebras</div>
+        <div class="price">
+        <span>$7.00</span>
+        $2.99
+        </div>
+    </div>
+    <div class="piece">
+        <div class="foto">
+        <img src="images/sock3.jpg">
+        </div>
+        <div class="title">SpongeBob SquarePants</div>
+        <div class="price">
+        <span>$6.00</span>
+        $3.99
+        </div>
+    </div>
+    <div class="piece">
+        <div class="foto">
+        <img src="images/sock4.jpg">
+        </div>
+        <div class="title">Yellow with bananas</div>
+        <div class="price">
+        <span>$10.00</span>
+        $4.99
+        </div>
+    </div>
+    <div class="piece">
+        <div class="foto">
+        <img src="images/sock5.jpg">
+        </div>
+        <div class="title">Cats</div>
+        <div class="price">
+        <span>$8.00</span>
+        $2.99
+        </div>
+    </div>
+    <input type="submit" value="Select">
+    
+
+
+
+
+</div>
+<div class="container6">
+<h1>Congratulate you!</h1>
+    <p>You have chosen the sock! Please fill in your bank card information for payment and address for delivery</p>
+<form>
+    <label for="card">Bank card:</label>
+    <input type="text" id="card" name="card" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="XXXX-XXXX-XXXX-XXXX">
+</br>
+<label for="tel">Mobile number:</label>
+    <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="X-XXX-XXX-XX-XX">
+</br>
+    <label for="address">Delivery address:</label>
+        <textarea id="address" name="address" cols ="21" rows="2"></textarea>
+        <label for="date2">Delivery date:</label>
+        <input type="date" id="date2" name="date2" value="2020-07-01">
+      
+        <label for="time">Delivery time:</label>
+        <input type="time" id="time" name="time" value="12:00">
+    <input type="submit" value="Payment">
+</form>
+</div> 
+
+ 
+
+</div>
+</body>
+<footer>
+    <p>Идея, перевод, разработка макета сайта "Магазина второго носка" принадлежат Ольге Захаровой</p>
+   <div class="icon">
+    <a href=""><img src="images/img1.jpg"></a>
+    <a href=""><img src="images/img2.png"></a>
+    <a href=""><img src="images/img3.jpg"></a>
+    <a href=""><img src="images/img4.png"></a>
+    </div>
+    </footer>
+    </html> 
